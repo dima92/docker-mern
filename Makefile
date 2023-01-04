@@ -14,7 +14,7 @@ backend:
 		-d \
 		--name notes-backend \
 		--network notes-net \
-		-v /Users/vladilen/WebstormProjects/docker-mern-practice/server:/app \
+		-v /Users/dima-/WebstormProjects/docker-mern/server:/app \
 		-v /app/node_modules \
 		--env-file ./config/development.env \
 		notes-backend
@@ -24,7 +24,7 @@ frontend:
 		-d \
 		--rm \
 		--name notes-frontend \
-		-v /Users/vladilen/WebstormProjects/docker-mern-practice/client/src:/app/src \
+		-v /Users/dima-/WebstormProjects/docker-mern/client/src:/app/src \
 		notes-frontend
 
 stop:
